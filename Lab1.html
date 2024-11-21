@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна сторінка Менеджера Підписок</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form input, form select, form textarea {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Менеджер Підписок</h1>
+</header>
+
+<main>
+
+<section>
+    <h2>Зображення Менеджера Підписок</h2>
+    <img src="https://cdn-icons-png.flaticon.com/512/80/80023.png" alt="Зображення підписок" style="width: 10%;">
+</section>
+
+<section>
+    <h2>Таблиця підписок</h2>
+    <table>
+        <tr>
+            <th>Назва сервісу</th>
+            <th>Ціна</th>
+            <th>Дата наступного платежу</th>
+        </tr>
+        <tr>
+            <td>Netflix</td>
+            <td>299 грн</td>
+            <td>20 жовтня 2024</td>
+        </tr>
+        <tr>
+            <td>Spotify</td>
+            <td>199 грн</td>
+            <td>15 жовтня 2024</td>
+        </tr>
+        <tr>
+            <td>Adobe Creative Cloud</td>
+            <td>599 грн</td>
+            <td>1 листопада 2024</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Списки підписок</h2>
+    <h3>Нумерований список підписок:</h3>
+    <ol>
+        <li>Netflix</li>
+        <li>Spotify</li>
+        <li>Adobe Creative Cloud</li>
+    </ol>
+
+    <h3>Маркірований список підписок:</h3>
+    <ul>
+        <li>Netflix — 299 грн</li>
+        <li>Spotify — 199 грн</li>
+        <li>Adobe Creative Cloud — 599 грн</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Додати нову підписку</h2>
+    <form action="#">
+        <label for="service-name">Назва сервісу:</label>
+        <input type="text" id="service-name" name="service-name" placeholder="Введіть назву сервісу" required>
+
+        <label for="price">Ціна (грн):</label>
+        <input type="number" id="price" name="price" placeholder="Введіть ціну" required>
+
+        <label for="payment-date">Дата наступного платежу:</label>
+        <input type="date" id="payment-date" name="payment-date" required>
+
+        <label for="notes">Коментар:</label>
+        <textarea id="notes" name="notes" placeholder="Введіть додаткову інформацію" rows="4"></textarea>
+
+        <button type="submit">Додати підписку</button>
+    </form>
+</section>
+
+<section>
+    <h2>Опис предметної галузі</h2>
+    <p>Щоб дізнатися більше про предметну галузь та функціонал Менеджера Підписок, відвідайте сторінку <a href="index.html">Опис предметної галузі</a>.</p>
+</section>
+
+</main>
+
+
+
+<footer>
+    <p>&copy; 2024 Менеджер Підписок. Всі права захищені.</p>
+</footer>
+
+</body>
+</html>
